@@ -1,0 +1,225 @@
+.greet-main {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.greeting-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greeting-text-div {
+  flex: 1;
+}
+
+.greeting-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subTitle {
+  font-size: 20px;
+  color: #777;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+.wave-emoji {
+  display: inline-block;
+  animation: wave 1.8s infinite;
+}
+
+@keyframes wave {
+  0% {
+      transform: rotate(0deg);
+  }
+  10% {
+      transform: rotate(-10deg);
+  }
+  20% {
+      transform: rotate(12deg);
+  }
+  30% {
+      transform: rotate(-10deg);
+  }
+  40% {
+      transform: rotate(9deg);
+  }
+  50% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+.social-media-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-media-div a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.icon-button i {
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.greeting-image-div img {
+  width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .button-greeting-div {
+    justify-content: space-around;
+  }
+  .greeting-main {
+      display: block;
+      text-align: center;
+  }
+
+  .greeting-text {
+      font-size: 36px;
+  }
+
+  .greeting-image-div img {
+      margin-top: 20px;
+      width: 100%;
+  }
+}
+
+.social-media-div {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.icon-button {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.icon-button i {
+  color: #fff;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  text-align: center;
+  width: 2.6rem;
+  transition: background-color 0.2s ease-in;
+}
+
+/* Custom colors for each icon */
+.facebook i {
+  background-color: #3b5998;
+}
+
+.linkedin i {
+  background-color: #0077b5;
+}
+
+.github i {
+  background-color: #333;
+}
+
+.gitlab i {
+  background-color: #fc6d27;
+}
+
+.google i {
+  background-color: #dd4b39;
+}
+
+.twitter i {
+  background-color: #1da1f2;
+}
+
+/* Hover Transition */
+.icon-button i:hover {
+  background-color: #555;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .social-media-div {
+    justify-content: center;
+  }
+
+  .icon-button {
+    margin: 0 10px;
+  }
+}
+
+
+.button-greeting-div {
+  display: flex;
+  margin-top: 5px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.main-button {
+  background-color: #55198b;
+  border: solid 1px #55198b;
+  color: #ffffff;
+  font-weight: 700;
+  width: max-content;
+  padding: 13px 22px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+}
+.main-button:hover {
+  background-color: #ffffff;
+  color: #55198b;
+  transition: all 0.3s ease 0s;
+  transform: translateY(-3px);
+}
+.project-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.project-button > .main-button {
+  margin-right: 0 !important;
+}
+/* Media Query */
+@media (max-width: 768px) {
+  .main-button {
+    font-size: 0.938rem;
+    padding: 12px 18px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .main-button {
+    font-size: 0.75rem;
+  }
+}

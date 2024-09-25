@@ -13,7 +13,7 @@ import { TopBannerComponent } from './core/top-banner/top-banner.component';
     AppComponent,
     HeaderComponent,
     LayoutComponent,
-    TopBannerComponent
+    TopBannerComponent,
   ],
   imports: [
     BrowserModule,

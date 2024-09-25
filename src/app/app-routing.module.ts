@@ -6,7 +6,14 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutComponent,
-    children: []
+    children: [
+      {
+        path: '', redirectTo: 'portfolio', pathMatch: 'full'
+      },
+      {
+        path: 'portfolio', loadChildren: () => import('./pages/main/main.module').then(m => m.MainModule),
+      }
+    ]
   }
 ];
 
